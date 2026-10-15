@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080817">
+  <title>AETHER — Learning Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="space-glow glow-one"></div>
+  <div class="space-glow glow-two"></div>
+  <div class="stars" id="stars"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Aether home"><span class="brand-symbol">✳</span><span>AETHER<small>LEARNING UNIVERSE</small></span></a>
+      <div class="side-label">YOUR SPACE</div>
+      <nav class="navigation">
+        <button class="nav-btn active" data-view="home"><span>◈</span> Universe</button>
+        <button class="nav-btn" data-view="worlds"><span>◎</span> Learning Worlds</button>
+        <button class="nav-btn" data-view="missions"><span>✧</span> Missions</button>
+        <button class="nav-btn" data-view="journey"><span>↗</span> My Journey</button>
+      </nav>
+      <div class="side-quest">
+        <div class="mini-planet">✦</div><p class="side-label">DAILY CHALLENGE</p>
+        <h3>Code something<br>extraordinary.</h3><p>Complete one lesson today.</p>
+        <button class="small-button" data-open="worlds">Accept quest ↗</button>
+      </div>
+      <div class="side-profile"><div class="user-avatar">A</div><div><strong>Explorer</strong><small>Level 01 · Beginner</small></div><span class="online-dot"></span></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="breadcrumb"><span>SPACE /</span> <strong id="view-label">UNIVERSE</strong></div><div class="top-actions"><div class="xp-chip">✦ <span id="xp">120</span> XP</div><button class="icon-button" id="theme-button" title="Toggle visual mode">◐</button><div class="top-avatar">A</div></div></header>
+      <section class="view active" id="home">
+        <div class="hero">
+          <div class="hero-copy"><div class="eyebrow"><span class="pulse-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+            <h1>Don't just learn.<br><span>Become limitless.</span></h1>
+            <p>Your knowledge is a universe waiting to expand. Choose a world, master a skill, and create your future.</p>
+            <div class="hero-actions"><button class="primary-button" data-open="worlds">Explore the universe <span>↗</span></button><button class="ghost-button" data-open="journey">View my journey →</button></div>
+            <div class="hero-metrics"><div><strong id="hero-lessons">12</strong><small>LESSONS EXPLORED</small></div><div class="metric-divider"></div><div><strong id="hero-streak">3 <em>days</em></strong><small>LEARNING STREAK</small></div><div class="metric-divider"></div><div><strong id="hero-level">01</strong><small>EXPLORER LEVEL</small></div></div>
+          </div>
+          <div class="universe-stage" id="universe-stage"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="orbit-dot dot-one"></div><div class="orbit-dot dot-two"></div><div class="orbit-dot dot-three"></div><div class="planet"><div class="planet-shine"></div><div class="planet-crater crater-one"></div><div class="planet-crater crater-two"></div><div class="planet-crater crater-three"></div></div><div class="floating-label label-top">✦ KNOWLEDGE CORE</div><div class="floating-label label-bottom"><span class="pulse-dot"></span> UNIVERSE ONLINE</div></div>
+        </div>
+        <div class="section-header"><div><div class="eyebrow">CHOOSE YOUR DESTINATION</div><h2>Learning worlds<span class="accent">.</span></h2></div><button class="text-link" data-open="worlds">View all worlds ↗</button></div>
+        <div class="world-grid">
+          <article class="world-card tilt-card" data-world="web" tabindex="0"><div class="card-top"><span class="world-number">WORLD / 01</span><span class="world-arrow">↗</span></div><div class="mini-world web-world"><span>&lt;/&gt;</span><i></i></div><div class="world-type">CREATIVE ENGINEERING</div><h3>Web Galaxy</h3><p>Turn your ideas into interactive experiences.</p><div class="card-progress"><div class="progress-track"><div class="progress-value" id="web-bar" style="width:40%"></div></div><span id="web-pct">40%</span></div><button class="card-action" data-course="web">Enter this world <span>→</span></button></article>
+          <article class="world-card tilt-card" data-world="python" tabindex="0"><div class="card-top"><span class="world-number">WORLD / 02</span><span class="world-arrow">↗</span></div><div class="mini-world python-world"><span>Py</span><i></i></div><div class="world-type">LOGIC & INTELLIGENCE</div><h3>Python Nebula</h3><p>Transform complex problems into simple solutions.</p><div class="card-progress"><div class="progress-track"><div class="progress-value green-progress" id="python-bar" style="width:20%"></div></div><span id="python-pct">20%</span></div><button class="card-action" data-course="python">Enter this world <span>→</span></button></article>
+          <article class="world-card tilt-card" data-world="design" tabindex="0"><div class="card-top"><span class="world-number">WORLD / 03</span><span class="world-arrow">↗</span></div><div class="mini-world design-world"><span>✳</span><i></i></div><div class="world-type">DESIGN & IMAGINATION</div><h3>Design Dimension</h3><p>Build beautiful digital experiences with purpose.</p><div class="card-progress"><div class="progress-track"><div class="progress-value pink-progress" id="design-bar" style="width:10%"></div></div><span id="design-pct">10%</span></div><button class="card-action" data-course="design">Enter this world <span>→</span></button></article>
+        </div>
+        <div class="bottom-grid">
+          <div class="glass-panel"><div class="panel-heading"><div><div class="eyebrow">YOUR NEXT MOVE</div><h3>Active mission</h3></div><span class="mission-icon">✧</span></div><p class="mission-title">Build your first digital creation</p><p class="muted">Complete a lesson in any learning world to earn XP and move forward.</p><div class="mission-footer"><span>REWARD <strong>+20 XP</strong></span><button class="small-button" data-open="missions">View mission →</button></div></div>
+          <div class="glass-panel streak-panel"><div class="eyebrow">CONSISTENCY CREATES MASTERY</div><h3>Your learning rhythm</h3><div class="week-row" id="week-row"><div class="day"><span>M</span><i>✓</i></div><div class="day"><span>T</span><i>✓</i></div><div class="day today"><span>W</span><i>✦</i></div><div class="day"><span>T</span><i>·</i></div><div class="day"><span>F</span><i>·</i></div><div class="day"><span>S</span><i>·</i></div><div class="day"><span>S</span><i>·</i></div></div><p class="muted">Keep your streak alive. One lesson a day is a great start.</p></div>
+        </div>
+      </section>
+      <section class="view" id="worlds"><div class="page-intro"><div class="eyebrow">THE MULTIVERSE OF SKILLS</div><h1>Choose your <span>world.</span></h1><p>Every skill you master opens a new dimension.</p></div><div class="world-grid expanded-worlds">
+        <article class="world-card tilt-card" data-world="web" tabindex="0"><div class="card-top"><span class="world-number">WORLD / 01</span><span class="world-arrow">↗</span></div><div class="mini-world web-world"><span>&lt;/&gt;</span><i></i></div><div class="world-type">CREATIVE ENGINEERING</div><h3>Web Galaxy</h3><p>HTML, CSS and JavaScript.</p><div class="card-progress"><div class="progress-track"><div class="progress-value" id="web-bar-all" style="width:40%"></div></div><span id="web-pct-all">40%</span></div><button class="card-action" data-course="web">Enter this world <span>→</span></button></article>
+        <article class="world-card tilt-card" data-world="python" tabindex="0"><div class="card-top"><span class="world-number">WORLD / 02</span><span class="world-arrow">↗</span></div><div class="mini-world python-world"><span>Py</span><i></i></div><div class="world-type">LOGIC & INTELLIGENCE</div><h3>Python Nebula</h3><p>Python, logic and problem-solving.</p><div class="card-progress"><div class="progress-track"><div class="progress-value green-progress" id="python-bar-all" style="width:20%"></div></div><span id="python-pct-all">20%</span></div><button class="card-action" data-course="python">Enter this world <span>→</span></button></article>
+        <article class="world-card tilt-card" data-world="design" tabindex="0"><div class="card-top"><span class="world-number">WORLD / 03</span><span class="world-arrow">↗</span></div><div class="mini-world design-world"><span>✳</span><i></i></div><div class="world-type">DESIGN & IMAGINATION</div><h3>Design Dimension</h3><p>UI/UX, creativity and visual design.</p><div class="card-progress"><div class="progress-track"><div class="progress-value pink-progress" id="design-bar-all" style="width:10%"></div></div><span id="design-pct-all">10%</span></div><button class="card-action" data-course="design">Enter this world <span>→</span></button></article>
+      </div></section>
+      <section class="view" id="missions"><div class="page-intro"><div class="eyebrow">OBJECTIVES & ACHIEVEMENTS</div><h1>Your <span>missions.</span></h1><p>Every completed task brings you closer to mastery.</p></div><div class="mission-list">
+        <article class="mission-row"><div class="mission-badge">⌘</div><div class="mission-info"><span class="world-number">MISSION 01 · BEGINNER</span><h3>Enter a learning world</h3><p>Open any world and complete your first lesson.</p><div class="mission-reward">✦ 20 XP reward</div></div><button class="primary-button mission-complete" data-mission="0">Start mission ↗</button></article>
+        <article class="mission-row"><div class="mission-badge green-badge">⌁</div><div class="mission-info"><span class="world-number">MISSION 02 · EXPLORER</span><h3>Explore two dimensions</h3><p>Make progress in two different learning worlds.</p><div class="mission-reward">✦ 40 XP reward</div></div><button class="primary-button mission-complete" data-mission="1">Start mission ↗</button></article>
+        <article class="mission-row"><div class="mission-badge pink-badge">✧</div><div class="mission-info"><span class="world-number">MISSION 03 · CREATOR</span><h3>Build your learning streak</h3><p>Complete three lessons to build a learning habit.</p><div class="mission-reward">✦ 60 XP reward</div></div><button class="primary-button mission-complete" data-mission="2">Start mission ↗</button></article>
+      </div></section>
+      <section class="view" id="journey"><div class="page-intro"><div class="eyebrow">YOUR PERSONAL EVOLUTION</div><h1>The journey <span>so far.</span></h1><p>Every lesson is proof of what you can become.</p></div>
+        <div class="journey-stats"><div class="journey-stat"><span>TOTAL EXPERIENCE</span><strong><b id="journey-xp">120</b> XP</strong></div><div class="journey-stat"><span>LESSONS COMPLETED</span><strong id="journey-lessons">12</strong></div><div class="journey-stat"><span>WORLDS EXPLORED</span><strong id="journey-worlds">1 / 3</strong></div></div>
+        <div class="glass-panel journey-panel"><div class="eyebrow">EXPLORER LEVEL</div><h2 id="level-title">Level 01 — Cosmic Beginner</h2><p class="muted">Earn experience by completing lessons and missions.</p><div class="level-track"><div id="level-bar"></div></div><div class="level-footer"><span id="level-xp">120 / 200 XP</span><span id="level-next">80 XP to next level</span></div></div>
+        <div class="glass-panel"><div class="eyebrow">RECENT ACTIVITY</div><h3 class="activity-title">Your cosmic log</h3><div id="activity-log"><div class="activity-item"><span>✦</span><div><strong>Journey initiated</strong><p>Your learning universe has been created.</p></div><small>Just now</small></div></div></div>
+      </section>
+      <footer class="footer"><span>✳ AETHER</span><span>BUILT TO EXPLORE THE UNKNOWN.</span><span>© 2026</span></footer>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="course-modal" aria-hidden="true"><div class="course-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close">×</button><div class="modal-planet" id="modal-planet">✦</div><div class="eyebrow" id="modal-type">LEARNING WORLD</div><h2 id="modal-title">Web Galaxy</h2><p id="modal-description">Start your next adventure.</p><div class="modal-progress"><div class="progress-track"><div class="progress-value" id="modal-bar" style="width:40%"></div></div><span id="modal-pct">40% explored</span></div><div class="lesson-box"><span>YOUR NEXT LESSON</span><strong id="lesson-title">HTML & CSS Foundations</strong><p>Complete a lesson to increase your world progress and earn +20 XP.</p></div><button class="primary-button modal-start" id="start-lesson">Begin lesson <span>↗</span></button><p class="modal-note">Demo experience · Progress is saved in this browser session.</p></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
